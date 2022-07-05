@@ -109,3 +109,16 @@ fi
 ```
 ![test](img/elif-else-statement.png)
 
+
+### LOGICAL OPERATORS
+Logical operators are used to evaluate multiple conditions.
+Below are the key values for the logical operators.
+
+```
+"-eq" : val1 -eq val2 Returns true if the values are equal.
+"-ne" : val1 -ne val2 Returns true if the values are not equal.
+"-gt" : val1 -gt val2 Returns true if val1 is greater than val2.
+"-gt" : val1 -ge val2 Returns true if val1 is greater than or equal to val2.
+"-lt" : val1 -lt val2 Returns true if val1 is less than val2.
+"-le" : val1 -le val2 Returns true if val1 is less than or equal to val2.
+```
