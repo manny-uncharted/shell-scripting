@@ -49,3 +49,16 @@ or
 echo "My name is ${NAME}"
 ```
 ![Printing a variable](img/echo-my-name.png)
+
+### Taking input from the user
+The read command is used to take input from the user.
+
+```
+read -p "What is your name? " NAME
+```
+and then to output the user input using the echo command.
+```
+echo "Hello $NAME"
+```
+![Taking input from the user](img/read-input.png)
+
