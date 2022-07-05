@@ -55,3 +55,12 @@ fi
 # val1 -le val2 Returns true if val1 is less than or equal to val2.
 #########
 
+NUM1=3
+NUM2=4
+
+if [ $NUM1 -eq $NUM2 ]
+then
+    echo "$NUM1 is equal to $NUM2"
+else
+    echo "$NUM1 is not equal to $NUM2"
+fi

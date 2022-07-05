@@ -122,3 +122,17 @@ Below are the key values for the logical operators.
 "-lt" : val1 -lt val2 Returns true if val1 is less than val2.
 "-le" : val1 -le val2 Returns true if val1 is less than or equal to val2.
 ```
+example:
+using the "-eq" operator
+```
+$NUM1=3
+$NUM2=4
+
+if [ $NUM1 -eq $NUM2 ]
+then
+    echo "$NUM1 is equal to $NUM2"
+else
+    echo "$NUM1 is not equal to $NUM2"
+fi
+```
+![test](img/logical-operators.png)
