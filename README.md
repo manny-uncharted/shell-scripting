@@ -26,3 +26,11 @@ To check the location of the bash command
 which bash
 ```
 ![Location of the bash command](img/which_bash.png)
+
+### ECHO COMMAND
+The echo command is used to print text to the screen.
+
+```
+echo "Hello World"
+```
+![To print text to the screen](img/echo-hello-world.png)
