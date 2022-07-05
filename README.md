@@ -34,3 +34,18 @@ The echo command is used to print text to the screen.
 echo "Hello World"
 ```
 ![To print text to the screen](img/echo-hello-world.png)
+
+### Working with Variables
+Variables are named identifiers that store values. It is uppercase by convention. Accepts letters, numbers, and underscores as variable names.
+
+In this example we'll be declaring a variable.
+```
+NAME="Brandon"
+```
+and output it using the echo command and the $ sign or the ${variable-name} .
+```
+echo "My name is $NAME"
+or
+echo "My name is ${NAME}"
+```
+![Printing a variable](img/echo-my-name.png)
