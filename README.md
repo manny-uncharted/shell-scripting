@@ -62,3 +62,50 @@ echo "Hello $NAME"
 ```
 ![Taking input from the user](img/read-input.png)
 
+### Working with conditionals
+Like every programming language, conditionals help to evaluate whether an action should be performed or not.
+#### The IF statement
+The if statement is used to evaluate a condition.
+
+```
+if [condition]
+then
+    command
+fi
+```
+example:
+```
+$NAME="Brandon Smith"
+if [ "$NAME" == "Brandon Smith" ]
+then
+    echo "Your name is Brandon Smith"
+fi
+```
+![test](img/if-statement.png)
+
+#### The ELIF and ELSE Statement
+The work about the same as the if statement, except that it is used to evaluate multiple conditions.
+
+```
+if [condition]
+then
+    command
+elif [condition]
+then
+    command
+fi
+```
+example:
+```
+if [ "$NAME" == "Brandon Smith" ]
+then
+    echo "Your name is Brandon Smith."
+elif [ "$NAME" == "Jack" ]
+then
+    echo "Your name is Jack."
+else
+    echo "Your name is not Brandon Smith."
+fi
+```
+![test](img/elif-else-statement.png)
+
