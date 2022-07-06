@@ -64,3 +64,36 @@ then
 else
     echo "$NUM1 is not equal to $NUM2"
 fi
+
+
+# FILE CONDITIONS
+
+######
+# -b file Returns true if the file exists and is a block device.
+# -d file Returns true if the file exists and is a directory.
+# -e file Returns true if the file exists.
+# -f file Returns true if the file exists and is a regular file.
+# -g file Returns true if the group id is set on the file.
+# -r file Returns true if the file exists and is readable.
+
+FILE="myfile.txt"
+if [ -f "$FILE" ]
+then
+    echo "The file $FILE exists and is a file."
+else
+    echo "The file $FILE does not exist."
+fi
+
+# CASE STATEMENT
+read -p "Are you 21 or older? Y/N" ANSWER
+case "$ANSWER" in
+    [yY] | [yY][eE][sS])
+        echo "You can drink!"
+        ;;
+    [nN] | [nN][oO])
+        echo "You can not drink!"
+        ;;
+    *)
+        echo "Please enter y/yes or n/no"
+        ;;
+esac

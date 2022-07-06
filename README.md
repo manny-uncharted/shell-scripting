@@ -136,3 +136,64 @@ else
 fi
 ```
 ![test](img/logical-operators.png)
+
+### FILE CONDITIONS
+The following are the key values for the file conditions.
+
+```
+"-b": -b file Returns true if the file exists and is a block device.
+"-d": -d file Returns true if the file exists and is a directory.
+"-e": -e file Returns true if the file exists.
+"-f": -f file Returns true if the file exists and is a regular file.
+"-g": -g file Returns true if the group id is set on the file.
+"-r": -r file Returns true if the file exists and is readable.
+```
+example:
+```
+touch myfile.txt
+FILE="myfile.txt"
+if [ -f "$FILE" ]
+then
+    echo "The file $FILE exists and is a file."
+else
+    echo "The file $FILE does not exist."
+fi
+```
+![test](img/file-conditions.png)
+
+
+### CASE STATEMENT
+The case statement is used to evaluate a condition.
+
+```
+case expression in
+    pattern1 )
+        command1
+        command2
+        ;;
+    pattern2 )
+        command3
+        command4
+        ;;
+    * )
+        command5
+        command6
+        ;;
+esac
+```
+example:
+```
+read -p "Are you 21 or older? Y/N" ANSWER
+case "$ANSWER" in
+    [yY] | [yY][eE][sS])
+        echo "You can drink!"
+        ;;
+    [nN] | [nN][oO])
+        echo "You can not drink!"
+        ;;
+    *)
+        echo "Please enter y/yes or n/no"
+        ;;
+esac
+```
+![test](img/case-statement.png)
