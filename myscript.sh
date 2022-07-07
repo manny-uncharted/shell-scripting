@@ -125,7 +125,13 @@
 # done < "new-1.txt"
 
 # FUNCTION
-function sayHello() {
-    echo "Hello World!"
+# function sayHello() {
+#     echo "Hello World!"
+# }
+# sayHello
+
+# FUNCTION WITH PARAMETERS
+function greet() {
+    echo "Hello, I am $1 and I am $2 years old."
 }
-sayHello
+greet "Brad" "36"

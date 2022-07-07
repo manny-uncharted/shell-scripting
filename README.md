@@ -248,3 +248,39 @@ while read -r CURRENT_LINE
 done < "new-1.txt"
 ```
 ![test](img/while-loop.png)
+
+### FUNCTION
+The function is used to define a set of commands that can be reused.
+
+```
+function name {
+    command
+}
+```
+example:
+```
+function sayHello {
+    echo "Hello World"
+}
+sayHello
+```
+![test](img/function.png)
+
+#### Function with parameters
+The function can also take parameters.
+
+```
+function name {
+    command $1 $2
+}
+name "$1" "$2"
+```
+
+example:
+```
+function greet() {
+    echo "Hello, I am $1 and I am $2 years old."
+}
+greet "Brad" "36"
+```
+![test](img/function-parameters.png)
