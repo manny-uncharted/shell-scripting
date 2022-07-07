@@ -197,3 +197,54 @@ case "$ANSWER" in
 esac
 ```
 ![test](img/case-statement.png)
+
+### FOR LOOPS
+The for loop is used to iterate over a list of values.
+
+```
+for command in list
+do 
+    command
+done
+```
+example:
+```
+NAMES="Brad Kevin Alice Sam, Shawn"
+for NAME in $NAMES
+do
+    echo "Hello $NAME"
+done
+```
+![test](img/for-loop.png)
+
+#### Example of for loop to rename files
+```
+FILES=$(ls *.txt)
+NEW="new"
+for FILE in $FILES
+    do 
+        echo "Renaming $FILE to $NEW-$FILE"
+        mv $FILE $NEW-$FILE
+    done
+```
+![test](img/for-loop-rename.png)
+
+### WHILE LOOP
+The while loop is used to evaluate a condition.
+
+```
+while [condition]
+do
+    command
+done
+```
+example:
+```
+LINE=1
+while read -r CURRENT_LINE
+    do
+        echo "$LINE: $CURRENT_LINE"
+        ((LINE++))
+done < "new-1.txt"
+```
+![test](img/while-loop.png)
