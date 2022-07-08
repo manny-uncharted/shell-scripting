@@ -131,7 +131,13 @@
 # sayHello
 
 # FUNCTION WITH PARAMETERS
-function greet() {
-    echo "Hello, I am $1 and I am $2 years old."
-}
-greet "Brad" "36"
+# function greet() {
+#     echo "Hello, I am $1 and I am $2 years old."
+# }
+# greet "Brad" "36"
+
+# CREATE A FOLDER AND WRITE TO A FILE
+mkdir hello
+touch "hello/world.txt"
+echo "Hello World!" >> "hello/world.txt"
+echo "Created hello/world.txt"

@@ -284,3 +284,14 @@ function greet() {
 greet "Brad" "36"
 ```
 ![test](img/function-parameters.png)
+
+### CREATE A FOLDER AND WRITE TO A FILE.
+The following code will create a folder named "hello" and write to a file named "world.txt".
+
+```
+mkdir hello
+touch hello/world.txt
+echo "Hello World" >> "hello/world.txt"
+echo "Created hello/world.txt"
+```
+![test](img/create-folder-and-write-to-file.png)
